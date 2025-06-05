@@ -1,0 +1,18 @@
+Things to revisit:
+	Insertion Sorting LinkedLists
+	Quadratic probing
+
+Huffman Compression Algorith
+
+Knapsack and FractionalKnapsack
+
+Mid-square hash functions, 
+	A mid-square hash squares the key, extracts R digits from the result's middle, and returns the remainder of 
+	the middle digits divided by hash table size N. Ex: For a hash table with 100 entries and a key of 453, the 
+	decimal (base 10) mid-square hash function computes 453 * 453 = 205209, and returns the middle two digits 52. 
+	For N buckets, R must be greater than or equal to log10N
+ 	to index all buckets. The process of squaring and extracting middle digits reduces the likelihood of keys mapping to just a few 	buckets.
+
+	A binary mid-square hash function extracts the middle R bits, and returns the remainder of the middle bits 
+	divided by hash table size N, where R is greater than or equal to Log2N
+	. Ex: For a hash table size of 200, R = 8, then 8 bits are needed for indices 0 to 199.
